@@ -40,7 +40,7 @@ public class Main{
         System.gc();
 
         int removed = removeRefsPolledFromReferenceQueue(referenceQueue, references);
-        System.out.println("Final used mem " + getUsedMem() + "    Refs removed " + removed + "   left " + references.size());
+        System.out.println("Final used mem " + getUsedMem() + "    Refs removed from ref queue" + removed + "   left " + references.size());
 
 
     }
@@ -52,27 +52,31 @@ public class Main{
 
             HeavyList newTail = allocate(HOW_MANY, oldTail);
 
-            HeavyList curr = oldTail.next;
-            while (curr != null) {
-                Reference<HeavyList> reference = new SoftReference<>(curr, queue);
-//                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
-//                Reference<HeavyList> reference = new PhantomReference<>(curr, queue);
-                references.add(reference);
-
-                curr = curr.getNext();
-            }
+            createReferencesAndRegisterThemInQueue(queue, references, oldTail);
 
             deallocateHalf(head);
 
             int removed = removeRefsPolledFromReferenceQueue(queue, references);
 
             System.gc();   //uncomment this line to comparing with forced gc
-            System.out.println("used mem " + getUsedMem() + "    Refs removed " + removed + "   left " + references.size());
+            System.out.println("used mem " + getUsedMem() + "    Refs removed from ref queue" + removed + "   left " + references.size());
 
             oldTail = newTail;
         }
         head = null;
         oldTail = null;
+    }
+
+    private static void createReferencesAndRegisterThemInQueue(ReferenceQueue<HeavyList> queue, Set<Reference<HeavyList>> references, HeavyList oldTail) {
+        HeavyList curr = oldTail.next;
+        while (curr != null) {
+            Reference<HeavyList> reference = new SoftReference<>(curr, queue);
+//                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
+//                Reference<HeavyList> reference = new PhantomReference<>(curr, queue);
+            references.add(reference);
+
+            curr = curr.getNext();
+        }
     }
 
     private static long getUsedMem() {
