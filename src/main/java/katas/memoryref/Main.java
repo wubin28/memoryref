@@ -5,9 +5,7 @@ import com.sun.istack.internal.Nullable;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
 import java.lang.ref.SoftReference;
-import java.lang.ref.PhantomReference;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -37,11 +35,11 @@ public class Main{
         long startTime = System.currentTimeMillis();
 
         allocationLoop(referenceQueue, references, 100);
-        System.out.println("Total time " + (System.currentTimeMillis() - startTime));
+        System.out.println("Total time of allocation loop" + (System.currentTimeMillis() - startTime));
 
         System.gc();
-        int removed = removeRefs(referenceQueue, references);
 
+        int removed = removeRefsPolledFromReferenceQueue(referenceQueue, references);
         System.out.println("Final used mem " + getUsedMem() + "    Refs removed " + removed + "   left " + references.size());
 
 
@@ -66,7 +64,7 @@ public class Main{
 
             deallocateHalf(head);
 
-            int removed = removeRefs(queue, references);
+            int removed = removeRefsPolledFromReferenceQueue(queue, references);
 
             System.gc();   //uncomment this line to comparing with forced gc
             System.out.println("used mem " + getUsedMem() + "    Refs removed " + removed + "   left " + references.size());
@@ -81,7 +79,7 @@ public class Main{
         return Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
     }
 
-    private static int removeRefs(ReferenceQueue queue, Set<Reference<HeavyList>> references) {
+    private static int removeRefsPolledFromReferenceQueue(ReferenceQueue queue, Set<Reference<HeavyList>> references) {
         int removed = 0;
         while (true){
             Reference r = queue.poll();
@@ -90,7 +88,6 @@ public class Main{
             references.remove(r);
             removed++;
         }
-        ;
         return removed;
     }
 
