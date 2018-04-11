@@ -1,0 +1,115 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=63687:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/lib/tools.jar:/Users/binwu/OOR/katas/remote/memoryref/target/classes katas.memoryref.Main
+objc[28608]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin/java (0x10483b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1049664e0). One of the two will be used. Which one is undefined.
+Start!
+Available processors (cores): 8
+Free memory (bytes): 252056504
+Maximum memory (bytes): 3817865216
+Total memory (bytes): 257425408
+Press ^C to break!
+
+
+Used mem
+Used mem 301144304    Refs removed from ref queue 0   left 500000
+Used mem 448674344    Refs removed from ref queue 250000   left 750000
+Used mem 522841920    Refs removed from ref queue 375000   left 875000
+Used mem 561567464    Refs removed from ref queue 437500   left 937500
+Used mem 580599624    Refs removed from ref queue 468750   left 968750
+Used mem 589483192    Refs removed from ref queue 484375   left 984375
+Used mem 594952952    Refs removed from ref queue 492186   left 992189
+Used mem 596719928    Refs removed from ref queue 496095   left 996094
+Used mem 598770640    Refs removed from ref queue 498047   left 998047
+Used mem 599316000    Refs removed from ref queue 499022   left 999025
+Used mem 600572624    Refs removed from ref queue 499513   left 999512
+Used mem 600752216    Refs removed from ref queue 499756   left 999756
+Used mem 601567184    Refs removed from ref queue 499878   left 999878
+Used mem 601621480    Refs removed from ref queue 499939   left 999939
+Used mem 602318536    Refs removed from ref queue 499968   left 999971
+Used mem 602336736    Refs removed from ref queue 499986   left 999985
+Used mem 602346408    Refs removed from ref queue 499991   left 999994
+Used mem 602352184    Refs removed from ref queue 499996   left 999998
+Used mem 602355392    Refs removed from ref queue 499998   left 1000000
+Used mem 602356000    Refs removed from ref queue 499999   left 1000001
+Used mem 602356664    Refs removed from ref queue 500001   left 1000000
+Used mem 602357184    Refs removed from ref queue 500000   left 1000000
+Used mem 602357728    Refs removed from ref queue 500000   left 1000000
+Used mem 602357896    Refs removed from ref queue 500000   left 1000000
+Used mem 602357944    Refs removed from ref queue 500000   left 1000000
+Used mem 602357960    Refs removed from ref queue 500000   left 1000000
+Used mem 602358312    Refs removed from ref queue 500000   left 1000000
+Used mem 602358576    Refs removed from ref queue 500000   left 1000000
+Used mem 602358472    Refs removed from ref queue 500000   left 1000000
+Used mem 602358480    Refs removed from ref queue 500000   left 1000000
+Used mem 602358480    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358632    Refs removed from ref queue 500000   left 1000000
+Used mem 602358776    Refs removed from ref queue 500000   left 1000000
+Used mem 602358632    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602358488    Refs removed from ref queue 500000   left 1000000
+Used mem 602325160    Refs removed from ref queue 500000   left 1000000
+Used mem 602336888    Refs removed from ref queue 500000   left 1000000
+Used mem 602344408    Refs removed from ref queue 500000   left 1000000
+Used mem 602349216    Refs removed from ref queue 500000   left 1000000
+Used mem 602352472    Refs removed from ref queue 500000   left 1000000
+Used mem 602354664    Refs removed from ref queue 500000   left 1000000
+Used mem 602356160    Refs removed from ref queue 500000   left 1000000
+Used mem 602356672    Refs removed from ref queue 500000   left 1000000
+Used mem 602357256    Refs removed from ref queue 500000   left 1000000
+Used mem 602357800    Refs removed from ref queue 500000   left 1000000
+Used mem 602358064    Refs removed from ref queue 500000   left 1000000
+Used mem 602358016    Refs removed from ref queue 500000   left 1000000
+Used mem 602358032    Refs removed from ref queue 500000   left 1000000
+Used mem 602358384    Refs removed from ref queue 500000   left 1000000
+Used mem 602358504    Refs removed from ref queue 500000   left 1000000
+Used mem 602358544    Refs removed from ref queue 500000   left 1000000
+Used mem 602358552    Refs removed from ref queue 500000   left 1000000
+Used mem 602358552    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358704    Refs removed from ref queue 500000   left 1000000
+Used mem 602358656    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358560    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358680    Refs removed from ref queue 500000   left 1000000
+Used mem 602358584    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358512    Refs removed from ref queue 500000   left 1000000
+Used mem 602358632    Refs removed from ref queue 500000   left 1000000
+Total time of allocation loop153437
+Used mem 82357656    Refs removed from ref queue 1000000   left 0
+
+Process finished with exit code 0

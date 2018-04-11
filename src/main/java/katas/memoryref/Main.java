@@ -36,7 +36,7 @@ public class Main{
         long startTime = System.currentTimeMillis();
 
         allocationLoop(referenceQueue, references, 100);
-        System.out.println("Total time of allocation loop" + (System.currentTimeMillis() - startTime));
+        System.out.println("Total time of allocation loop " + (System.currentTimeMillis() - startTime));
 
         System.gc();
 
