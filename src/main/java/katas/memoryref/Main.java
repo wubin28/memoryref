@@ -26,7 +26,7 @@ public class Main{
 
         System.out.println("Start!");
 
-        ReferenceQueue<HeavyList> queue = new ReferenceQueue();
+        ReferenceQueue<HeavyList> referenceQueue = new ReferenceQueue();
 
         Set<Reference<HeavyList>> references = new HashSet<>();
 
@@ -36,11 +36,11 @@ public class Main{
 
         long start = System.currentTimeMillis();
 
-        allocationLoop(queue, references, 100);
+        allocationLoop(referenceQueue, references, 100);
         System.out.println("Total time " + (System.currentTimeMillis() - start));
 
         System.gc();
-        int removed = removeRefs(queue, references);
+        int removed = removeRefs(referenceQueue, references);
 
         System.out.println("Final used mem " + getUsedMem() + "    Refs removed " + removed + "   left " + references.size());
 
