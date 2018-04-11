@@ -6,6 +6,7 @@ import com.sun.istack.internal.Nullable;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
+import java.lang.ref.WeakReference;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -40,7 +41,7 @@ public class Main{
         System.gc();
 
         int removed = removeRefsPolledFromReferenceQueue(referenceQueue, references);
-        System.out.println("Final used mem " + getUsedMem() + "    Refs removed from ref queue " + removed + "   left " + references.size());
+        printRefs(references, removed);
 
 
     }
@@ -59,7 +60,7 @@ public class Main{
             int removed = removeRefsPolledFromReferenceQueue(queue, references);
 
             System.gc();   //uncomment this line to comparing with forced gc
-            System.out.println("used mem " + getUsedMem() + "    Refs removed from ref queue " + removed + "   left " + references.size());
+            printRefs(references, removed);
 
             oldTail = newTail;
         }
@@ -67,11 +68,15 @@ public class Main{
         oldTail = null;
     }
 
+    private static void printRefs(Set<Reference<HeavyList>> references, int removed) {
+        System.out.println("Used mem " + getUsedMem() + "    Refs removed from ref queue " + removed + "   left " + references.size());
+    }
+
     private static void createReferencesAndRegisterThemInQueue(ReferenceQueue<HeavyList> queue, Set<Reference<HeavyList>> references, HeavyList oldTail) {
         HeavyList curr = oldTail.next;
         while (curr != null) {
-            Reference<HeavyList> reference = new SoftReference<>(curr, queue);
-//                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
+//            Reference<HeavyList> reference = new SoftReference<>(curr, queue);
+                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
 //                Reference<HeavyList> reference = new PhantomReference<>(curr, queue);
             references.add(reference);
 
