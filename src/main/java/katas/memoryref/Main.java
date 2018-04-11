@@ -11,8 +11,29 @@ public class Main{
 
     public static final int HOW_MANY = 500_000;
 
-    public static void main(String [] args){
+    public static void main(String [] args) throws InterruptedException {
+        // byBarbini();
+        byVarghese();
+    }
 
+    private static void byVarghese() throws InterruptedException {
+        HeavyList heavyList = new HeavyList(0, null); // a strong object
+
+        ReferenceQueue<HeavyList> referenceQueue = new ReferenceQueue<HeavyList>();// the ReferenceQueue
+        WeakReference<HeavyList> reference = new WeakReference<HeavyList>(heavyList, referenceQueue);
+
+        System.out.println("Any weak references in Q ? " + (referenceQueue.poll() != null));
+        heavyList = null;
+
+        System.out.println("Now to call gc...");
+        Runtime.getRuntime().gc(); // the object will be cleared here - finalize will be called.
+        Reference<? extends HeavyList> refRemoved = referenceQueue.remove();
+        System.out.println("Any weak references in Q ? " + (refRemoved != null));
+        System.out.println("Is this same as original weak reference ? " + (refRemoved == reference));
+        System.out.println(" and heap object is " + refRemoved.get());
+    }
+
+    private static void byBarbini() {
         //-XX:+HeapDumpOnOutOfMemoryError -Xmx4096m
         //try with
         // -XX:+UnlockExperimentalVMOptions -XX:G1MaxNewSizePercent=75 -XX:G1NewSizePercent=50 -XX:+UseG1GC
@@ -39,8 +60,6 @@ public class Main{
 
         int removed = removeRefsPolledFromReferenceQueue(referenceQueue, references);
         printRefs(references, removed);
-
-
     }
 
     private static void allocationLoop(ReferenceQueue<HeavyList> queue, Set<Reference<HeavyList>> references, int howManyTimes) {
