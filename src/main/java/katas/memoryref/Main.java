@@ -3,10 +3,7 @@ package katas.memoryref;
 
 import com.sun.istack.internal.Nullable;
 
-import java.lang.ref.Reference;
-import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
+import java.lang.ref.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -76,8 +73,8 @@ public class Main{
         HeavyList curr = oldTail.next;
         while (curr != null) {
 //            Reference<HeavyList> reference = new SoftReference<>(curr, queue);
-                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
-//                Reference<HeavyList> reference = new PhantomReference<>(curr, queue);
+//                Reference<HeavyList> reference = new WeakReference<>(curr, queue);
+                Reference<HeavyList> reference = new PhantomReference<>(curr, queue);
             references.add(reference);
 
             curr = curr.getNext();
