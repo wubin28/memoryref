@@ -40,7 +40,7 @@ public class Main{
         System.gc();
 
         int removed = removeRefsPolledFromReferenceQueue(referenceQueue, references);
-        System.out.println("Final used mem " + getUsedMem() + "    Refs removed from ref queue" + removed + "   left " + references.size());
+        System.out.println("Final used mem " + getUsedMem() + "    Refs removed from ref queue " + removed + "   left " + references.size());
 
 
     }
@@ -59,7 +59,7 @@ public class Main{
             int removed = removeRefsPolledFromReferenceQueue(queue, references);
 
             System.gc();   //uncomment this line to comparing with forced gc
-            System.out.println("used mem " + getUsedMem() + "    Refs removed from ref queue" + removed + "   left " + references.size());
+            System.out.println("used mem " + getUsedMem() + "    Refs removed from ref queue " + removed + "   left " + references.size());
 
             oldTail = newTail;
         }
