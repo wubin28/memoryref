@@ -1,0 +1,111 @@
+Start!
+Available processors (cores): 8
+Free memory (bytes): 254741016
+Maximum memory (bytes): 3817865216
+Total memory (bytes): 257425408
+Press ^C to break!
+
+
+Used mem
+used mem 563091248    Refs removed 0   left 500000
+used mem 1117872720    Refs removed 250000   left 750000
+used mem 1672092600    Refs removed 3992   left 1246008
+used mem 1965746672    Refs removed 808508   left 937500
+used mem 1604326432    Refs removed 468750   left 968750
+used mem 2164429616    Refs removed 53221   left 1415529
+used mem 2134933440    Refs removed 923341   left 992188
+used mem 2694500480    Refs removed 125260   left 1366928
+used mem 2084147888    Refs removed 868881   left 998047
+used mem 1678373736    Refs removed 499023   left 999024
+used mem 2239160656    Refs removed 3960   left 1495064
+used mem 2220334648    Refs removed 995308   left 999756
+used mem 2780155928    Refs removed 76017   left 1423739
+used mem 2144463448    Refs removed 923800   left 999939
+used mem 2703805720    Refs removed 148044   left 1351895
+used mem 2078750504    Refs removed 851910   left 999985
+used mem 1680842288    Refs removed 499992   left 999993
+used mem 2241084160    Refs removed 26742   left 1473251
+used mem 2196748904    Refs removed 973252   left 999999
+used mem 2756368104    Refs removed 98784   left 1401215
+used mem 2120149224    Refs removed 901215   left 1000000
+used mem 2679416560    Refs removed 170827   left 1329173
+used mem 2043417616    Refs removed 829173   left 1000000
+used mem 2603913352    Refs removed 13506   left 1486494
+used mem 2219938848    Refs removed 986494   left 1000000
+used mem 2770106600    Refs removed 85548   left 1414452
+used mem 2133698344    Refs removed 914452   left 1000000
+used mem 2692989864    Refs removed 157590   left 1342410
+used mem 2065614728    Refs removed 842410   left 1000000
+used mem 1680340208    Refs removed 500000   left 1000000
+used mem 2240524656    Refs removed 36290   left 1463710
+used mem 2185567832    Refs removed 963710   left 1000000
+used mem 2745334488    Refs removed 108332   left 1391668
+used mem 2108866808    Refs removed 891668   left 1000000
+used mem 1677832792    Refs removed 500000   left 1000000
+used mem 2239653520    Refs removed 0   left 1500000
+used mem 2232661032    Refs removed 1000000   left 1000000
+used mem 1681822848    Refs removed 500000   left 1000000
+used mem 2232006984    Refs removed 95096   left 1404904
+used mem 2721387976    Refs removed 250000   left 1654904
+used mem 2399545320    Refs removed 1154904   left 1000000
+used mem 1677895768    Refs removed 500000   left 1000000
+used mem 2238390576    Refs removed 9817   left 1490183
+used mem 2221890208    Refs removed 990183   left 1000000
+used mem 1682144848    Refs removed 500000   left 1000000
+used mem 2232247064    Refs removed 117880   left 1382120
+used mem 2697822104    Refs removed 250000   left 1632120
+used mem 2382978952    Refs removed 1132120   left 1000000
+used mem 1678216688    Refs removed 500000   left 1000000
+used mem 2238432856    Refs removed 32601   left 1467399
+used mem 2197057632    Refs removed 967399   left 1000000
+used mem 2756824288    Refs removed 104643   left 1395357
+used mem 2110815048    Refs removed 895357   left 1000000
+used mem 2669904152    Refs removed 176685   left 1323315
+used mem 2042739528    Refs removed 823315   left 1000000
+used mem 2626615240    Refs removed 245051   left 1254949
+used mem 1961417120    Refs removed 754949   left 1000000
+used mem 2515167992    Refs removed 91407   left 1408593
+used mem 2128239936    Refs removed 908593   left 1000000
+used mem 2687637440    Refs removed 165741   left 1334259
+used mem 2058426504    Refs removed 834259   left 1000000
+used mem 1682122744    Refs removed 500000   left 1000000
+used mem 2232658992    Refs removed 44459   left 1455541
+used mem 2178324384    Refs removed 955541   left 1000000
+used mem 2737882912    Refs removed 116507   left 1383493
+used mem 2101626656    Refs removed 883493   left 1000000
+used mem 1679611864    Refs removed 500000   left 1000000
+used mem 2241097344    Refs removed 0   left 1500000
+used mem 2234476912    Refs removed 1000000   left 1000000
+used mem 1674354752    Refs removed 500000   left 1000000
+used mem 2233965904    Refs removed 103274   left 1396726
+used mem 2714892688    Refs removed 250000   left 1646726
+used mem 2392568496    Refs removed 1146726   left 1000000
+used mem 1679968648    Refs removed 500000   left 1000000
+used mem 2240382408    Refs removed 17995   left 1482005
+used mem 2205394016    Refs removed 982005   left 1000000
+used mem 2765185248    Refs removed 90037   left 1409963
+used mem 2128692992    Refs removed 909963   left 1000000
+used mem 2687935360    Refs removed 162079   left 1337921
+used mem 2060617520    Refs removed 837921   left 1000000
+used mem 1680289568    Refs removed 500000   left 1000000
+used mem 2240531464    Refs removed 40780   left 1459220
+used mem 2180560336    Refs removed 959220   left 1000000
+used mem 2740212304    Refs removed 112822   left 1387178
+used mem 2103859312    Refs removed 887178   left 1000000
+used mem 1677781160    Refs removed 500000   left 1000000
+used mem 2239398136    Refs removed 0   left 1500000
+used mem 2232611672    Refs removed 1000000   left 1000000
+used mem 1682028344    Refs removed 500000   left 1000000
+used mem 2232327168    Refs removed 99585   left 1400415
+used mem 2716883072    Refs removed 250000   left 1650415
+used mem 2394794960    Refs removed 1150415   left 1000000
+used mem 1678100160    Refs removed 500000   left 1000000
+used mem 2238512992    Refs removed 14306   left 1485694
+used mem 2217138808    Refs removed 985694   left 1000000
+used mem 1682349304    Refs removed 500000   left 1000000
+used mem 2232377792    Refs removed 122369   left 1377631
+used mem 2694053440    Refs removed 250000   left 1627631
+used mem 2378587984    Refs removed 1127631   left 1000000
+used mem 1678422272    Refs removed 500000   left 1000000
+Total time 168894
+Final used mem 1130604488    Refs removed 0   left 1000000
