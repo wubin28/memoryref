@@ -34,10 +34,10 @@ public class Main{
         System.out.println("Press ^C to break!");
         System.out.println("\n\nUsed mem");
 
-        long start = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
         allocationLoop(referenceQueue, references, 100);
-        System.out.println("Total time " + (System.currentTimeMillis() - start));
+        System.out.println("Total time " + (System.currentTimeMillis() - startTime));
 
         System.gc();
         int removed = removeRefs(referenceQueue, references);
